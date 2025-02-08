@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Meteorológico</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Dashboard Meteorológico</h1>
+      <div class="controls">
+        <label for="startDate">Selecciona el rango de fechas:</label>
+        <input type="date" id="startDate" />
+        <input type="date" id="endDate" />
+        <button id="updateBtn">Actualizar</button>
+      </div>
+
+      <div class="chart-container">
+        <canvas id="temperatureChart"></canvas>
+      </div>
+      <div class="chart-container">
+        <canvas id="humidityChart"></canvas>
+      </div>
+      <div class="chart-container">
+        <canvas id="heatIndexChart"></canvas>
+      </div>
+      <div class="chart-container">
+        <canvas id="tempVarianceChart"></canvas>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
